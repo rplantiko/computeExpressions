@@ -1,1 +1,15 @@
-. 
+﻿=encoding utf-8
+ 
+=head1 Compute expressions evaluating to a given rational number
+
+The following expression 
+
+	1+(2*3*((4*((5*6)+(7*8)))-9))
+
+evaluates to 2011. Are there more such expressions yielding 2011, keeping the number of operations and the order of the numbers fixed - only varying the arrangement of the brackets and the operations to use in each place.
+
+The program C<get2011> answers this kind of questions. Since for more than about 10 operations, quite a lot of computations have to be performed, the program allows multithreading.
+
+=head2 See also
+
+There are two posts in my blog L<http://ruediger-plantiko.blogspot.com>, dating October 2011, discussing this program and its parts.
