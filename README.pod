@@ -10,6 +10,10 @@ evaluates to 2011. Are there more such expressions yielding 2011, keeping the nu
 
 The program C<get2011> answers this kind of questions. Since for more than about 10 operations, quite a lot of computations have to be performed, the program allows multithreading.
 
+=head2 Requirements
+
+The program has been generated and developed using the C<g++> tool chain on a L<MinGW|http://www.mingw.org/> environment on a Win32 computer. Since MinGW has only rudimentary POSIX support, I have added the L<pthreads-win32|http://sourceware.org/pthreads-win32/> implementation for being able to work with POSIX threads. Since I was not able to link this library statically, you will need the dynamic library  C<pthreadGC2.dll> to be available when running the program.
+
 =head2 See also
 
 There are two posts in my blog L<http://ruediger-plantiko.blogspot.com>, dating October 2011, discussing this program and its parts.
