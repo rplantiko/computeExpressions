@@ -15,6 +15,5 @@ void nextExecutionPlan( node* root );
 void nextExecutionPlanSingleThreaded( node* root );
 void *evaluate(void* p);
 
-void printResultRPN( node* current, node* root, rational result[], int op[]);
 void readNumberFromCommandLine( int i, int* n, int argc, char** argv );
 
